@@ -1,6 +1,8 @@
 html {
   box-sizing: border-box;
-  font-family: "Patua One", sans-serif;
+  font-family: Georgia, serif;
+  line-height: 1.5;
+  background-color: #f2f1ed;
 }
 
 *,
@@ -17,7 +19,7 @@ header {
   display: contents;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  margin: 1rem;
 }
 
 nav {
@@ -33,19 +35,13 @@ ul {
 }
 
 li {
+  font-family: "Patua One", sans-serif;
   list-style: none;
-  font-size: 1.5em;
+  font-size: 2rem;
 }
 
 a {
   color: #fff;
-}
-
-main {
-  display: grid;
-  grid-template-areas:
-    "box1 box2"
-    "box1 box2";
 }
 
 .pano {
@@ -54,16 +50,47 @@ main {
 }
 
 .logo {
-  width: 30%;
+  width: 22%;
   grid-column: 1 / -1;
   grid-row: 4;
   z-index: 1;
+  margin-left: .5em;
 }
 
 img {
   width: 100%;
 }
 
-figure {
+main {
+  display: grid;
+  grid-template-areas: "box1 box2";
   margin: 0;
+  grid-template-columns: 1fr 1fr;
+}
+
+p {
+  margin-top: .5rem;
+}
+
+figure:nth-child(1) {
+  margin: 0;
+  margin-top: 0;
+  margin-right: .5rem;
+  margin-left: 1rem;
+  grid-area: box1;
+}
+
+figure:nth-child(2) {
+  margin: 0;
+  margin-top: 0;
+  margin-left: .5rem;
+  margin-right: 1rem;
+  grid-area: box2;
+}
+
+h2 {
+  margin-bottom: 0;
+  font-family: "Patua One", serif;
+  font-size: 1.5rem;
+  color: #30658d;
 }
